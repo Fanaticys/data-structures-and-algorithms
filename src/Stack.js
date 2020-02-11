@@ -1,26 +1,26 @@
-class Stuck {
+class Stack {
   constructor() {
-    this.stuck = [];
+    this.stack = [];
   }
 
   get length() {
-    return this.stuck.length;
+    return this.stack.length;
   }
 
   add(item) {
-    this.stuck.push(item);
+    this.stack.push(item);
   }
 
   remove() {
-    this.stuck.pop();
+    this.stack.pop();
   }
 
   peek() {
-    return this.stuck[this.length - 1];
+    return this.stack[this.length - 1];
   }
 }
 
-const s = new Stuck();
+const s = new Stack();
 
 s.add('First');
 s.add('Second');
